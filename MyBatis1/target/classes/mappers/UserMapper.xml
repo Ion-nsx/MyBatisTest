@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.UserMapper">
+    <!--int insertUser();-->
+    <insert id="insertUser">
+        insert into student values(102,'张三','99')
+    </insert>
+    <!--void updateUser();-->
+    <update id="updateUser">
+        update student set name='小明' where id=102
+    </update>
+    <!--void deleteUser();-->
+    <delete id="deleteUser">
+        delete from student where id = 102
+    </delete>
+    <!--User getUser();-->
+    <select id="getUser" resultType="pojo.User">
+        select * from student where id=101
+    </select>
+    <!--List<User> getAll();-->
+    <select id="getAll" resultType="pojo.User">
+        select * from student
+    </select>
+
+</mapper>
