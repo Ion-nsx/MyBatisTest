@@ -1,5 +1,5 @@
 # MyBatisTest
-##Mybatis框架笔记  
+Mybatis框架笔记  
 MyBatis获取参数值的两种方式（重点)  
 MyBatis获取参数值的两种方式：${}和#{}  
 ${}的本质就是字符串拼接，#{}的本质就是占位符赋值  
